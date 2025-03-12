@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import subprocess
 from datetime import date, timedelta, datetime
 
 # Formatando a data para o padrão brasileiro ex: 01/01/2021
@@ -92,4 +93,6 @@ endDate = date.today()
 # Chama a função para baixar os relatórios
 baixar_relatorios(str(token), startDate, endDate, resaleId)
             
-        
+# Rodar o exportPurchases.py para baixar os relatórios de compras
+
+subprocess.run(["python", "exportPurchases.py"], shell=True)

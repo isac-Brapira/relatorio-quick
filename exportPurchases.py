@@ -85,3 +85,4 @@ endDate = date.today()
 # Chama a função para baixar os relatórios
 baixar_relatorios(str(token), startDate, endDate)
 
+
