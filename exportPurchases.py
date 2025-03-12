@@ -60,7 +60,7 @@ def baixar_relatorios(token, start_date, end_date):
     
     with open(caminho_completo, "w", encoding="utf-8") as arquivo_json:
         json.dump(todos_os_dados, arquivo_json, ensure_ascii=False, indent=4)
-    print(f"Relatório completo salvo em {caminho_completo}!")
+    print(f"Relatório completo de COMPRAS salvo em {caminho_completo}!")
             
 # Configurações
 

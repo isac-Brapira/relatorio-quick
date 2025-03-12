@@ -67,7 +67,7 @@ def baixar_relatorios(token, start_date, end_date, resaleId):
     
     with open(caminho_completo, "w", encoding="utf-8") as arquivo_json:
         json.dump(todos_os_dados, arquivo_json, ensure_ascii=False, indent=4)
-    print(f"Relatório completo salvo em {caminho_completo}!")
+    print(f"Relatório completo de CHAMADOS salvo em {caminho_completo}!")
             
 # Configurações
 
@@ -95,4 +95,4 @@ baixar_relatorios(str(token), startDate, endDate, resaleId)
             
 # Rodar o exportPurchases.py para baixar os relatórios de compras
 
-subprocess.run(["python", "exportPurchases.py"], shell=True)
+subprocess.run(["python", "i:\\Administrativo\\TecInfo\\DESENVOLVIMENTOS\\QUICK GESTÃO\\exportPurchases.py"])
